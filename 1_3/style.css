@@ -5,21 +5,21 @@ body{
 
 @font-face {
     font-family: 'TTLakes-bold';
-    src: url(fonts/TTLakes-Bold.ttf);
+    src: url(../fonts/TTLakes-Bold.ttf);
     font-style: normal; 
     font-weight: normal; 
  }
  
 @font-face {
     font-family: 'TTLakes-regular';
-    src: url(fonts/TTLakes-Regular.ttf);
+    src: url(../fonts/TTLakes-Regular.ttf);
     font-style: normal; 
     font-weight: normal; 
  }
 
  @font-face {
     font-family: 'TTLakes-medium';
-    src: url(fonts/TTLakes-Medium.ttf);
+    src: url(../fonts/TTLakes-Medium.ttf);
  }
  
     .header {
@@ -48,7 +48,7 @@ body{
     .header__button-list {
         width: 40px;
         height: 40px;
-        background-image: url(img/first.svg);
+        background-image: url(../img/first.svg);
         border: none;
         background-color: unset;
         margin-right: 16px;
@@ -72,7 +72,7 @@ body{
 
     .header__button-repair {
         display: flex;
-        background-image:url('img/repair.svg');
+        background-image:url('../img/repair.svg');
         width: 40px;
         height: 40px;
         border: none;
@@ -81,7 +81,7 @@ body{
     }
 
     .header__button-checkstatus {
-        background-image: url('img/checkstatus.svg');
+        background-image: url('../img/checkstatus.svg');
         width: 40px;
         height: 40px;
         border: none;
@@ -160,7 +160,7 @@ body{
 
     .main-container__show-more::before {
         content: ' ';
-        background-image: url(img/icon.svg);
+        background-image: url(../img/icon.svg);
         width: 8px;
         height: 10px;
         position: relative;
@@ -203,7 +203,7 @@ body{
         
         width: 40px;
         height: 40px;
-        background-image: url(img/call.svg);
+        background-image: url(../img/call.svg);
         border: none;
         background-color: unset;
         margin-left: 16px;
@@ -213,7 +213,7 @@ body{
         
         width: 40px;
         height: 40px;
-        background-image: url(img/chat.svg);
+        background-image: url(../img/chat.svg);
         border: none;
         background-color: unset;
         margin-left: 16px;
@@ -223,7 +223,7 @@ body{
         margin-left: 16px;
         width: 40px;
         height: 40px;
-        background-image: url(img/profile.svg);
+        background-image: url(../img/profile.svg);
         border: none;
         background-color: unset;
         margin-right: 40px;
@@ -335,7 +335,7 @@ body{
 
     .header__button-repair {
         display: flex;
-        background-image:url('img/repair.svg');
+        background-image:url('../img/repair.svg');
         width: 40px;
         height: 40px;
         border: none;
@@ -345,7 +345,7 @@ body{
     }
 
     .header__button-checkstatus {
-        background-image: url('img/checkstatus.svg');
+        background-image: url('../img/checkstatus.svg');
         width: 40px;
         height: 40px;
         border: none;
