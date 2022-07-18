@@ -21,7 +21,9 @@ body{
     font-family: 'TTLakes-medium';
     src: url(../fonts/TTLakes-Medium.ttf);
  }
- 
+ body{
+    overflow-x: hidden;
+ }
     .header {
         display: flex;
         flex-direction: row;
