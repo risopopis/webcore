@@ -1,6 +1,7 @@
 body{
     margin: 0;
     max-width: 1120px;
+    overflow: hidden;
 }
 
 
@@ -21,9 +22,6 @@ body{
  @font-face {
     font-family: 'TTLakes-medium';
     src: url(../fonts/TTLakes-Medium.ttf);
- }
- body{
-    overflow-x: hidden;
  }
     .header {
         display: flex;
@@ -107,7 +105,7 @@ body{
         display: flex;
         flex-direction: column;
         background-color: #F8F8F8;
-        height: 509px;
+        height: 800px;
     }
 
     .main-container__header {
