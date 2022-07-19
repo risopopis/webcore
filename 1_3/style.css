@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    max-width: 1120px;
 }
 
 
@@ -47,12 +48,13 @@ body{
         margin-right: 16px;
     }
 
-    .header__button-list {
+    .button_list {
         width: 40px;
         height: 40px;
-        background-image: url(../img/first.svg);
+        background-image: url(../img/lines.svg);
         border: none;
-        background-color: unset;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
         margin-right: 16px;
     }
 
@@ -61,7 +63,16 @@ body{
         height: 51px;
     }
 
-    .header__button-repair::before {
+    .button {
+        width: 40px;
+        height: 40px;
+        border: none;
+        background-color: #FF3E79;
+        border-radius: 20px;
+        margin-right: 16px;
+    }
+
+    .button_repair::before {
         content: ' ';
         border-left: 2px solid #EAEAEA;
         border-radius: 1px;
@@ -72,22 +83,24 @@ body{
 
     }
 
-    .header__button-repair {
+    .button_repair {
         display: flex;
-        background-image:url('../img/repair.svg');
+        background-image:url(../img/repair.svg);
         width: 40px;
         height: 40px;
         border: none;
-        background-color: unset;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
         margin-right: 16px;
     }
 
-    .header__button-checkstatus {
-        background-image: url('../img/checkstatus.svg');
+    .button_checkstatus {
+        background-image: url(../img/chekstatus.svg);
         width: 40px;
         height: 40px;
         border: none;
-        background-color: unset;
+         background-repeat: no-repeat;
+        background-position: 50% 50%;
     }
 
     .main-container {
@@ -194,6 +207,10 @@ body{
         display: none;
     }
 
+    .link_hidden {
+        display: none;
+    }
+
     @media (min-width: 768px) {
 
     .header__button_hidden {
@@ -201,38 +218,43 @@ body{
         flex-direction: row;
     }       
 
-    .header__button-сall {
-        
+    
+    .button_сall {
+        display: flex;
         width: 40px;
         height: 40px;
         background-image: url(../img/call.svg);
-        border: none;
-        background-color: unset;
-        margin-left: 16px;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        margin-right: 16px;
     }
     
-    .header__button-chat {
-        
+    .button_chat {
+        display: flex;
         width: 40px;
         height: 40px;
         background-image: url(../img/chat.svg);
         border: none;
-        background-color: unset;
-        margin-left: 16px;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        margin-right: 16px;
     }
     
-    .header__button-profile {
+    .button_profile {
+        display: flex;
         margin-left: 16px;
         width: 40px;
         height: 40px;
         background-image: url(../img/profile.svg);
         border: none;
-        background-color: unset;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
         margin-right: 40px;
     }
 
     .main-container__header-pages {
-        overflow-x: visible;
+        overflow-x: scroll;
+        scrollbar-width: none;
     }
     
     .main-container__body {
@@ -275,6 +297,8 @@ body{
 
 @media (min-width: 1120px) {
 
+
+
     .main-container__header-title {
         width: 100%;
     }
@@ -312,32 +336,9 @@ body{
 }
 
 
-    .header__button-repair::before {
-        content: 'Оставить заявку';
-        font-family: 'TTLakes-medium';
-        font-size: 16px;
-        position: relative;
-        left: -150px;
-        height: 32px;
-        margin-top: 8px;
-        white-space: nowrap;
-        border:none;
-    }
-    .header__button-checkstatus::before {
-        content: 'Статус ремонта';
-        font-family: 'TTLakes-medium';
-        font-size: 16px;
-        position: relative;
-        left: -150px;
-        height: 32px;
-        margin-top: 8px;
-        white-space: nowrap;
-
-    }
-
     .header__button-repair {
         display: flex;
-        background-image:url('../img/repair.svg');
+        background-image:url(../img/repair.svg);
         width: 40px;
         height: 40px;
         border: none;
@@ -347,7 +348,7 @@ body{
     }
 
     .header__button-checkstatus {
-        background-image: url('../img/checkstatus.svg');
+        background-image: url(../img/chekstatus.svg);
         width: 40px;
         height: 40px;
         border: none;
@@ -391,9 +392,16 @@ body{
         
     }
 
+    .link_hidden {
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+        color: black;
+        margin-right: 10px;
+        font-family: 'TTLakes-medium';
+    }
    
 
     
     
 }
-    
