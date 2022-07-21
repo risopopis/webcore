@@ -106,6 +106,7 @@ body{
         flex-direction: column;
         background-color: #F8F8F8;
         height: 800px;
+        max-width: 1120px;
     }
 
     .main-container__header {
