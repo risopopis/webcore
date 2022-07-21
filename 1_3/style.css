@@ -330,8 +330,13 @@ body{
         padding-left: 24px;
         justify-content: space-between;
         right: 0px;
-        border-bottom: 1px  solid #41F6D7;
     }       
+
+    .header__menu {
+        border-bottom: none;
+    }
+
+
 
     .header__title {
        width: 500px;
@@ -363,8 +368,6 @@ body{
     .header__button_hidden {
         display: none;
     }
-
-
 
     .header__button-repair {
         display: flex;
