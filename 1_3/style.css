@@ -295,7 +295,13 @@ body{
 
 @media (min-width: 1120px) {
 
+    html {
+        max-width: 100%;
+    }
 
+    body {
+        background-color: #F8F8F8;
+    }
 
     .main-container__header-title {
         width: 100%;
@@ -303,7 +309,7 @@ body{
 
     .main-container__header-pages {
        margin-bottom: 24px;
-        flex-wrap: wrap;
+       
         overflow-x: visible;
     }
 
@@ -384,7 +390,7 @@ body{
         display: flex;
         margin-top: 25px;
         margin-left: auto;
-        margin-right: 28px;
+        
         border-radius: 6px;
         width: 532px; 
         
