@@ -24,9 +24,16 @@ body{
     src: url(../fonts/TTLakes-Medium.ttf);
  }
     .header {
+       display: flex;
+       flex-direction: column;
+
+    }
+
+    .header__menu {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        flex-wrap: wrap;
         align-items: center;
         height: 88px;
         border-bottom: 1px  solid #41F6D7;
@@ -124,20 +131,22 @@ body{
         justify-content: flex-start;
     }
 
-    .main-container__header::before {
+    .header__title::before {
         content: ' ';
         border-left: 4px solid #41F6D7;
         border-radius: 1px;
         height: 40px;
+        left: 0;
         position: absolute;
         margin-top: 14px;
-
     }
-    .main-container__header-title {
+
+    .header__title {
         font-family: 'TTLakes-Bold';
         font-size: 14px;
         margin: 0 16px;
-        width: 288px
+        width: 100%;
+
     }
 
     .main-container__header-pages {
@@ -312,13 +321,30 @@ body{
         background-color: #F8F8F8;
     }
 
-    .main-container__header-title {
-        width: 100%;
+    .header {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        height: 88px;
+        border: none;
+        padding-left: 24px;
+        justify-content: space-between;
+        right: 0px;
+        border-bottom: 1px  solid #41F6D7;
+    }       
+
+    .header__title {
+       width: 500px;
+    }
+
+    
+    .header__title {
+        margin: 0;
     }
 
     .main-container__header-pages {
        margin-bottom: 24px;
-       
+     
         overflow-x: scroll;
     }
 
@@ -338,15 +364,6 @@ body{
         display: none;
     }
 
-    .header {
-        flex-direction: column;
-        align-items: flex-end;
-        height: 88px;
-        border: none;
-        justify-content: center;
-        position: absolute;
-        right: 0px;
-}
 
 
     .header__button-repair {
@@ -403,6 +420,10 @@ body{
         border-radius: 6px;
         width: 532px; 
         
+    }
+       
+    .links {
+        margin-right: 24px;
     }
 
     .links__link_hidden {
