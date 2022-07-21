@@ -309,8 +309,6 @@ body{
 
     .main-container__header-pages {
        margin-bottom: 24px;
-       
-        overflow-x: scroll;
     }
 
     .main-container__body-about {
