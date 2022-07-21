@@ -428,6 +428,43 @@ body{
         width: 532px; 
         
     }
+
+    .button {
+        width: 0;
+        height: 0;
+    }
+
+    .button::after {
+        display: inline-block;
+      content: '';
+        width: 40px;
+       height: 40px;
+    background-color:#FF3E79 ;
+     border-radius: 50%;
+    }
+
+    .button_repair::after {
+  
+        background-image:url(../img/repair.svg);
+        border: none;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        margin-right: 16px;
+
+    }
+
+    .button_checkstatus::after {
+      background-image:url(../img/chekstatus.svg);
+        border: none;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        margin-right: 16px;
+        
+    }
+
+    .span::after {
+       
+    }
        
     .links {
         margin-right: 24px;
