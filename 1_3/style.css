@@ -227,6 +227,10 @@ body{
         display: none;
     }
 
+    .text_hidden {
+        display: none;
+    }
+
     @media (min-width: 768px) {
 
     .header__button_hidden {
@@ -428,13 +432,15 @@ body{
     .links {
         margin-right: 24px;
     }
+    
 
-    .links__link_hidden {
+    .text_hidden {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         text-decoration: none;
         color: black;
         margin-right: 10px;
+        width: 100px;
         font-family: 'TTLakes-medium';
     }
     
