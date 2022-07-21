@@ -61,6 +61,12 @@ body{
         height: 51px;
     }
 
+    .links {
+        display: flex;
+        align-items: center;
+        cursor:pointer;
+    }
+
     .button {
         width: 40px;
         height: 40px;
@@ -68,6 +74,8 @@ body{
         background-color: #FF3E79;
         border-radius: 20px;
         margin-right: 16px;
+        cursor:pointer;
+        
     }
 
     .button_repair::before {
@@ -106,6 +114,7 @@ body{
         flex-direction: column;
         background-color: #F8F8F8;
         height: 800px;
+        
 }
 
     .main-container__header {
@@ -205,7 +214,7 @@ body{
         display: none;
     }
 
-    .link_hidden {
+    .links__link_hidden {
         display: none;
     }
 
@@ -309,6 +318,8 @@ body{
 
     .main-container__header-pages {
        margin-bottom: 24px;
+       
+        overflow-x: scroll;
     }
 
     .main-container__body-about {
@@ -394,7 +405,7 @@ body{
         
     }
 
-    .link_hidden {
+    .links__link_hidden {
         display: flex;
         flex-direction: row;
         text-decoration: none;
@@ -402,6 +413,9 @@ body{
         margin-right: 10px;
         font-family: 'TTLakes-medium';
     }
-   
+    
+    .button_repair::before{
+        display: none;
+    }
     
 }
