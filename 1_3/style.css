@@ -35,6 +35,7 @@ body{
         justify-content: space-between;
         flex-wrap: wrap;
         padding-left: 16px;
+        padding-right: 16px;
         align-items: center;
         height: 88px;
         border-bottom: 1px  solid #41F6D7;
@@ -236,6 +237,10 @@ body{
         display: flex;
         flex-direction: row;
     }       
+     
+    .header {
+        padding-right: 24px;
+    }
 
     .header__menu {
         padding-right: 50px;
@@ -325,6 +330,7 @@ body{
         height: 88px;
         border: none;
         padding-left: 24px;
+        padding-right: 40px;
         justify-content: space-between;
         right: 0px;
     }       
