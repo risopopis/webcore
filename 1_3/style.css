@@ -34,6 +34,7 @@ body{
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
+        padding-left: 16px;
         align-items: center;
         height: 88px;
         border-bottom: 1px  solid #41F6D7;
@@ -42,8 +43,6 @@ body{
     .header__main-container {
         display: flex;
         flex-direction: row;
-        align-items: center;
-        margin-left: 16px;
     }
 
     .header__button-container {
@@ -51,21 +50,20 @@ body{
         flex-direction: row;
         align-items: center;
         margin-right: 16px;
+        
     }
 
-    .button_list {
-        width: 40px;
-        height: 40px;
+    .button_list::after {
         background-image: url(../img/lines.svg);
         border: none;
         background-repeat: no-repeat;
         background-position: 50% 50%;
-        margin-right: 16px;
+        
     }
 
     .header__logo {
-        width: 97px;
-        height: 51px;
+        width: 96px;
+        height: 50px;
     }
 
     .links {
@@ -75,14 +73,20 @@ body{
     }
 
     .button {
+        background: none;
+        border: none;
+        padding: 0;
+        margin-right: 16px;
+    }
+
+    .button::after {
+        display: inline-block;
+        content: ' ';
         width: 40px;
         height: 40px;
         border: none;
         background-color: #FF3E79;
         border-radius: 20px;
-        margin-right: 16px;
-        cursor:pointer;
-        
     }
 
     .button_repair::before {
@@ -90,27 +94,21 @@ body{
         border-left: 2px solid #EAEAEA;
         border-radius: 1px;
         position: relative;
-        left: -30px;
-        height: 32px;
-        margin-top: 5px;
+        left: -20px;
+        padding-top: 20px;
+        bottom: 5px;
 
     }
 
-    .button_repair {
-        display: flex;
+    .button_repair::after {
         background-image:url(../img/repair.svg);
-        width: 40px;
-        height: 40px;
         border: none;
         background-repeat: no-repeat;
         background-position: 50% 50%;
-        margin-right: 16px;
     }
 
-    .button_checkstatus {
+    .button_checkstatus::after {
         background-image: url(../img/chekstatus.svg);
-        width: 40px;
-        height: 40px;
         border: none;
          background-repeat: no-repeat;
         background-position: 50% 50%;
@@ -187,6 +185,7 @@ body{
         flex-direction: column;
         font-family: 'TTLakes-regular';
         font-size: 14px;
+        margin-right: 24px;
     }
 
     .main-container__show-more::before {
@@ -226,7 +225,7 @@ body{
     .links__link_hidden {
         display: none;
     }
-
+    
     .text_hidden {
         display: none;
     }
@@ -238,33 +237,27 @@ body{
         flex-direction: row;
     }       
 
-    
-    .button_сall {
-        display: flex;
-        width: 40px;
-        height: 40px;
-        background-image: url(../img/call.svg);
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-        margin-right: 16px;
+    .header__menu {
+        padding-right: 50px;
     }
     
-    .button_chat {
-        display: flex;
-        width: 40px;
-        height: 40px;
+        
+    .button_сall::after {
+        background-image: url(../img/call.svg);
+        border: none;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        
+    }
+    
+    .button_chat::after {
         background-image: url(../img/chat.svg);
         border: none;
         background-repeat: no-repeat;
         background-position: 50% 50%;
-        margin-right: 16px;
     }
     
-    .button_profile {
-        display: flex;
-        margin-left: 16px;
-        width: 40px;
-        height: 40px;
+    .button_profile::after {
         background-image: url(../img/profile.svg);
         border: none;
         background-repeat: no-repeat;
@@ -340,8 +333,6 @@ body{
         border-bottom: none;
     }
 
-
-
     .header__title {
        width: 500px;
     }
@@ -371,26 +362,6 @@ body{
 
     .header__button_hidden {
         display: none;
-    }
-
-    .header__button-repair {
-        display: flex;
-        background-image:url(../img/repair.svg);
-        width: 40px;
-        height: 40px;
-        border: none;
-        background-color: unset;
-        margin-right: 16px;
-        margin-left: auto;
-    }
-
-    .header__button-checkstatus {
-        background-image: url(../img/chekstatus.svg);
-        width: 40px;
-        height: 40px;
-        border: none;
-        background-color: unset;
-        margin-left: 150px;
     }
 
 
@@ -430,54 +401,21 @@ body{
     }
 
     .button {
-        width: 0;
-        height: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
-
-    .button::after {
-        display: inline-block;
-      content: '';
-        width: 40px;
-       height: 40px;
-    background-color:#FF3E79 ;
-     border-radius: 50%;
-    }
-
-    .button_repair::after {
-  
-        background-image:url(../img/repair.svg);
-        border: none;
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-        margin-right: 16px;
-
-    }
-
-    .button_checkstatus::after {
-      background-image:url(../img/chekstatus.svg);
-        border: none;
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-        margin-right: 16px;
-        
-    }
-
-    .span::after {
-       
-    }
-       
+ 
     .links {
+        display: flex;
         margin-right: 24px;
     }
     
 
     .text_hidden {
         display: flex;
-        flex-direction: column;
-        text-decoration: none;
-        color: black;
-        margin-right: 10px;
-        width: 100px;
+        flex-direction: row;
+        margin-right: 16px;
         font-family: 'TTLakes-medium';
     }
     
