@@ -8,38 +8,38 @@
     <title>CPSmob</title>
 </head>
 <body>
-    <nav class="navigation">
+    <aside class="navigation">
         <div class="navigation__header">
             <button class="button button_close"></button>
-            <img class="logo" src="../img/logo.svg">
+            <img class="logo" src="../img/logo.svg" alt="logo">
             <button class="button button_search"></button>
         </div>
-        <main class="navigation__menu">
-            <a class="navigation__item item_picked" href="#">Ремонт техники</a>
-            <a class="navigation__item" href="#">Услуги и сервисы</a>
-            <a class="navigation__item" href="#">Корпоративным клиентам</a>
-            <a class="navigation__item" href="#">Продавцам техники</a>
-            <a class="navigation__item" href="#">Партнёрам</a>
-            <a class="navigation__item" href="#">Производителям</a>
-            <a class="navigation__item" href="#">Наши сервисные центры</a>
-            <a class="navigation__item" href="#">Контакты</a>
-        </main>
-    <footer class="footer">
-        <div class="button-container">
-            <button class="button button_call"></button>
-            <button class="button button_chat"></button>
-            <button class="button button_profile"></button>
-        </div>
-        <div class="contacts">
-            <span class="contacts_email">mail@cps.com</span>
-            <span class="contacts_phone">8 800 890 8900</span>
-        </div>
-        <div class="language">
-            <button class="button_lang btn_picked">RU</button>
-            <button class="button_lang">EN</button>
-            <button class="button_lang">CH</button>
-        </div>
-    </footer>
-    </nav>
+            <ul class="list">
+               <li><a class="list__item list__item_picked" href="#">Ремонт техники</a></li>
+               <li><a class="list__item" href="#">Услуги и сервисы</a></li>
+               <li><a class="list__item" href="#">Корпоративным клиентам</a></li>
+               <li><a class="list__item" href="#">Продавцам техники</a></li>
+               <li><a class="list__item" href="#">Партнёрам</a></li>
+               <li><a class="list__item" href="#">Производителям</a></li>
+               <li><a class="list__item" href="#">Наши сервисные центры</a></li>
+               <li><a class="list__item" href="#">Контакты</a></li>
+            </ul>
+        <footer class="footer">
+            <div class="button-container">
+                <button class="button button_call"></button>
+                <button class="button button_chat"></button>
+                <button class="button button_profile"></button>
+            </div>
+            <div class="contacts">
+                <a href="mailto:mail@cps.com" class="contacts_email">mail@cps.com</span>
+                <a href ='tel:8 800 890 8900'class="contacts_phone">8 800 890 8900</span>
+            </div>
+            <div class="language">
+                <button class="button-lang button-lang_picked">RU</button>
+                <button class="button-lang">EN</button>
+                <button class="button-lang">CH</button>
+            </div>
+        </footer>
+    </aside>
 </body>
 </html>
