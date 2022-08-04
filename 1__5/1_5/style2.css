@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'TTLakes-Medium';
+    src: url(../fonts/TTLakes-Medium.ttf);
+    font-style: normal; 
+    font-weight: normal; 
+ }
+
+ 
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    max-width: 1120px;
+    background: #F2F2F2;
+}
+
+
+
+.section-brands {
+    border-top: 1px solid #D9FFF5;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 0;
+
+    
+}
+
+.section-brands__header {
+    font-family: 'TTLakes-Medium';
+    font-size: 12px;
+    color: #7E7E82;
+    background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    margin-bottom: 10px;
+    padding: 16px;
+    width: 100%;
+}
+
+.swiper-container {
+    overflow: hidden;
+
+}
+
+.swiper-wrapper {
+        width: 600px;
+        height: 300px;
+}
+
+.swiper-slide {
+display: flex;
+padding-left: 16px;
+flex-direction: row;
+align-items: center;
+padding-top: 16px;
+
+
+}
+
+.slider__item {
+    display: flex;
+    align-items: center;
+    border:  1px solid #EAEAEA;
+    height: 72px;
+    min-width: 240px;
+    margin-right: 16px;
+    background-color: white; 
+    max-width: 100%;
+}
+
+.image {
+    margin-left: 16px;
+}
+
+.slider__link {
+    display: flex;
+    border: 2px solid #FF3E79;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+    margin-left: auto;
+    justify-content: center;
+
+}
+
+.slider__link::before {
+    content: '';
+    background-image: url('../img/dropdown.svg');
+    background-repeat: no-repeat;
+    width: 8px;
+    height: 12px;
+    margin-top: 15px;
+    
+}
+
+
+.swiper-pagination {
+    position: relative;
+    bottom: 0;
+}
+
+.button {
+    display: none;
+}
+.hidden {
+    display: none;
+
+}
+
+
+@media(min-width: 768px) {
+
+    
+    .swiper-slide{
+        flex-wrap: wrap;
+    }
+
+    .slider__item {
+        margin-bottom: 16px;
+
+    }
+
+    .slider__items_hidden {
+        display: flex;
+    }
+    
+    .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: TTLakes-medium;
+        background: unset;
+        border: unset;
+        height: 25px;
+        padding: 2px 0;
+        align-self: start;
+        position: relative;
+        top: 15px;
+        margin-left: 16px;
+    }
+
+    .button_show-more::before {
+        content: " ";
+        background-image: url(../img/icon.svg);
+        width: 7px;
+        height: 11px;
+        margin-left: 5px;
+        margin-right: 16px;
+    
+    }
+    .button_hide::before {
+        content: " ";
+        background-image: url(../img/icon.svg);
+        width: 7px;
+        height: 11px;
+        margin-left: 5px;
+        margin-right: 16px;
+        transform: rotate(180deg);
+    }
+    .hidden{
+        display: none;
+    }
+}
