@@ -14,10 +14,22 @@ closeButton.addEventListener('click', function () {
   buttonMore.classList.remove('hidden');
   })
 
-  const swiper = new Swiper('.swiper-slide', {
-    direction: 'horizontal',
-    loop: true,
+  const swiper = new Swiper('.swiper', {
     pagination: {
-      el: '.swiper-pagination',
+        el: '.swiper-pagination',
+        clickable: true
     },
-  })
+    autoHeight: true,
+    spaceBetween: 16,
+    slidesPerView: 1.2,
+    centeredSlides: false,
+    breakpoints: {
+        768: {
+            enabled: false,
+            onAny() {
+                swiper.destroy(true, true);
+            }
+        }
+    },
+    observer: true,
+})
