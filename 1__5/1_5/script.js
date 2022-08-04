@@ -14,7 +14,7 @@ closeButton.addEventListener('click', function () {
   buttonMore.classList.remove('hidden');
   })
 
-  const swiper = new Swiper('.brands-slider', {
+  const swiper = new Swiper('.swiper-slide', {
     direction: 'horizontal',
     loop: true,
     pagination: {
