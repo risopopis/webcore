@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'TTLakes-Medium';
     src: url(../fonts/TTLakes-Medium.ttf);
-    font-style: normal; 
-    font-weight: normal; 
- }
+    font-style: normal;
+    font-weight: normal;
+}
 
- 
+
 
 body {
     padding: 0;
@@ -24,7 +24,7 @@ body {
     flex-wrap: wrap;
     min-width: 0;
 
-    
+
 }
 
 .section-brands__header {
@@ -37,39 +37,37 @@ body {
     width: 100%;
 }
 
-.swiper-container {
-    overflow: hidden;
-
-}
-
 .swiper {
-        width: 600px;
-        height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
 }
 
-.swiper-slides {
-display: flex;
-padding-left: 16px;
-flex-direction: row;
-align-items: center;
-padding-top: 16px;
-
+.swiper-wrapper {
+    display: flex;
+    padding-left: 16px;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 16px;
 
 }
 
-.slider__item {
+.swiper-slide {
     display: flex;
     align-items: center;
-    border:  1px solid #EAEAEA;
-    height: 72px;
-    min-width: 240px;
+    border: 1px solid #EAEAEA;
+    max-width: 240px;
     margin-right: 16px;
-    background-color: white; 
-    max-width: 100%;
+    height: 80px;
+    background-color: white;
+
 }
 
 .image {
     margin-left: 16px;
+    position: relative;
+    top: -5px;
 }
 
 .slider__link {
@@ -80,6 +78,8 @@ padding-top: 16px;
     height: 40px;
     margin-right: 16px;
     margin-left: auto;
+    position: relative;
+    top: -5px;
     justify-content: center;
 
 }
@@ -91,40 +91,47 @@ padding-top: 16px;
     width: 8px;
     height: 12px;
     margin-top: 15px;
-    
+
 }
 
-
 .swiper-pagination {
-    position: relative;
-    bottom: 0;
+    top: 190px;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #d2cece;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #B5B6BC;
 }
 
 .button {
     display: none;
 }
-.hidden {
-    display: none;
 
+
+.slider__items_hidden {
+    display: flex;
+    height: 102px;
 }
 
 
 @media(min-width: 768px) {
 
-    
-    .swiper-slide{
+    .swiper-wrapper {
+        display: flex;
         flex-wrap: wrap;
     }
 
-    .slider__item {
+    .swiper-slide {
+        flex-wrap: wrap;
         margin-bottom: 16px;
-
     }
 
-    .slider__items_hidden {
-        display: flex;
-    }
-    
+
     .button {
         display: flex;
         align-items: center;
@@ -147,8 +154,9 @@ padding-top: 16px;
         height: 11px;
         margin-left: 5px;
         margin-right: 16px;
-    
+
     }
+
     .button_hide::before {
         content: " ";
         background-image: url(../img/icon.svg);
@@ -158,7 +166,8 @@ padding-top: 16px;
         margin-right: 16px;
         transform: rotate(180deg);
     }
-    .hidden{
+
+    .hidden {
         display: none;
     }
 }
