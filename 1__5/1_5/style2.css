@@ -81,7 +81,12 @@ body {
     position: relative;
     top: -5px;
     justify-content: center;
+    transition: 0.3s;
+}
 
+.slider__link:hover {
+    transform: scale(1.1);
+    
 }
 
 .slider__link::before {
@@ -116,6 +121,7 @@ body {
 .slider__items_hidden {
     display: flex;
     height: 102px;
+    margin-top: 20px;
 }
 
 
@@ -145,6 +151,7 @@ body {
         position: relative;
         top: 15px;
         margin-left: 16px;
+        cursor: pointer;
     }
 
     .button_show-more::before {
@@ -156,6 +163,7 @@ body {
         margin-right: 16px;
 
     }
+    
 
     .button_hide::before {
         content: " ";
