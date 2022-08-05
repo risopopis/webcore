@@ -118,7 +118,7 @@ body {
 }
 
 
-.slider__items_hidden {
+.slider__items {
     display: flex;
     height: 102px;
     margin-top: 20px;
@@ -137,7 +137,6 @@ body {
         margin-bottom: 16px;
     }
 
-
     .button {
         display: flex;
         align-items: center;
@@ -153,6 +152,8 @@ body {
         margin-left: 16px;
         cursor: pointer;
     }
+
+  
 
     .button_show-more::before {
         content: " ";
@@ -175,7 +176,20 @@ body {
         transform: rotate(180deg);
     }
 
-    .hidden {
+    .slider__items_hidden {
+        display: none;
+    }
+
+    .button_hide_hidden {
+        display: hidden;
+    }
+
+    .button_show-more_hidden {
+        display: none;
+    }
+
+    .button_hide_hidden {
         display: none;
     }
 }
+
