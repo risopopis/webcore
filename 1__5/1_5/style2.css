@@ -73,7 +73,7 @@ body {
 .slider__link {
     display: flex;
     border: 2px solid #FF3E79;
-    border-radius: 20px;
+    border-radius: 50%;
     width: 40px;
     height: 40px;
     margin-right: 16px;
