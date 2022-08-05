@@ -1,8 +1,11 @@
 
+
 let showMore = document.querySelector('.slider__items_hidden');
 let buttonMore = document.querySelector('.button_show-more');
 let closeButton = document.querySelector('.button_hide');
 
+closeButton.classList.add('hidden');
+showMore.classList.add('hidden');
 buttonMore.addEventListener('click', function () {
   showMore.classList.remove('hidden');
   buttonMore.classList.add('hidden');
